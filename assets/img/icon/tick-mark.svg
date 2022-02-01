@@ -1,0 +1,8 @@
+<svg id="tick-mark" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <g id="Group_32" data-name="Group 32">
+    <path id="Path_24" data-name="Path 24" d="M32,64A32,32,0,1,1,64,32,32.036,32.036,0,0,1,32,64ZM32,2.667A29.333,29.333,0,1,0,61.333,32,29.368,29.368,0,0,0,32,2.667Z" fill="#4dd2e8"/>
+  </g>
+  <g id="Group_33" data-name="Group 33" transform="translate(20.069 24.047)">
+    <path id="Path_25" data-name="Path 25" d="M18.119,27.581a1.333,1.333,0,0,1-.94-.388L7.888,17.9a1.327,1.327,0,1,1,1.877-1.877l8.351,8.351L33.1,9.389a1.327,1.327,0,0,1,1.877,1.877L19.053,27.194a1.312,1.312,0,0,1-.934.388Z" transform="translate(-7.5 -9.001)" fill="#4dd2e8"/>
+  </g>
+</svg>

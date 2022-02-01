@@ -1,0 +1,5 @@
+@mixin logo_style($color) {
+	font-family: neon-reg;
+	font-size: 3.5rem;
+	color: $color;
+}
