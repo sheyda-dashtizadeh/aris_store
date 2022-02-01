@@ -1,0 +1,60 @@
+@import "fonts";
+@import "variable";
+@import "mixins";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	direction: rtl;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+.logo {
+	@include logo_style($blue);
+}
+
+.nav {
+	&-top {
+		width: 100%;
+		height: 40px;
+		background-color: $dark-color;
+		padding: 10px 0;
+
+		.link {
+			&-items a {
+				width: 87px;
+				height: 19px;
+				font-size: 0.7rem;
+				color: $white-color;
+			}
+		}
+		.phone {
+			font-size: 0.7rem;
+			color: $white-color;
+			text-align: center;
+			margin: auto auto auto 0;
+
+			a {
+				color: $white-color;
+				margin-right: 5px;
+			}
+
+			&::before {
+				content: "";
+				background: url(../img/icon/phone-call.svg) no-repeat;
+				background-position: center;
+				background-size: cover;
+				width: 18px;
+				height: 18px;
+				display: inline-block;
+				margin-left: 5px;
+			}
+		}
+	}
+}
