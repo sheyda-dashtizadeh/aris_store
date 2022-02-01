@@ -73,4 +73,98 @@ a {
   display: inline-block;
   margin-left: 5px;
 }
+
+.nav-main {
+  width: 100%;
+  padding: 10px 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.nav-main .link-items a {
+  font-size: 0.9rem;
+  color: #616161;
+}
+
+.nav-main .search-box {
+  width: 370px;
+  height: 38px;
+  position: relative;
+}
+
+.nav-main .search-box input, .nav-main .search-box img {
+  position: absolute;
+}
+
+.nav-main .search-box input.search, .nav-main .search-box img.search {
+  height: 100%;
+  width: 100%;
+  padding: 8px 20px;
+  border-radius: 20px;
+  color: #212121;
+  font-family: yekanBakh-reg;
+  border: 1px solid #bdbdbd;
+}
+
+.nav-main .search-box input.search::-webkit-input-placeholder, .nav-main .search-box img.search::-webkit-input-placeholder {
+  font-family: yekanBakh-reg;
+  color: #bdbdbd;
+  text-align: right;
+  font-size: 0.9rem;
+  padding: 2px;
+}
+
+.nav-main .search-box input.search:-ms-input-placeholder, .nav-main .search-box img.search:-ms-input-placeholder {
+  font-family: yekanBakh-reg;
+  color: #bdbdbd;
+  text-align: right;
+  font-size: 0.9rem;
+  padding: 2px;
+}
+
+.nav-main .search-box input.search::-ms-input-placeholder, .nav-main .search-box img.search::-ms-input-placeholder {
+  font-family: yekanBakh-reg;
+  color: #bdbdbd;
+  text-align: right;
+  font-size: 0.9rem;
+  padding: 2px;
+}
+
+.nav-main .search-box input.search::placeholder, .nav-main .search-box img.search::placeholder {
+  font-family: yekanBakh-reg;
+  color: #bdbdbd;
+  text-align: right;
+  font-size: 0.9rem;
+  padding: 2px;
+}
+
+.nav-main .search-box input.search:focus-visible, .nav-main .search-box img.search:focus-visible {
+  outline: 1px solid #616161;
+}
+
+.nav-main .search-box img {
+  left: 13px;
+  height: 24px;
+  width: 24px;
+  margin: 7px;
+  z-index: 999;
+}
+
+.nav ul {
+  margin: auto 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: yekanBakh-reg;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav ul .link-items a {
+  display: inline-block;
+  margin: 0 10px;
+  line-height: 2;
+}
 /*# sourceMappingURL=common.css.map */

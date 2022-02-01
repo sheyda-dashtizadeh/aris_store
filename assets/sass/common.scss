@@ -57,4 +57,72 @@ a {
 			}
 		}
 	}
+	&-main {
+		width: 100%;
+		padding: 10px 0;
+		height: fit-content;
+
+		.link {
+			&-items a {
+				font-size: 0.9rem;
+				color: $gray-color;
+			}
+		}
+
+		.search-box {
+			width: 370px;
+			height: 38px;
+			position: relative;
+
+			input {
+				position: absolute;
+
+				&.search {
+					height: 100%;
+					width: 100%;
+					padding: 8px 20px;
+					border-radius: 20px;
+					color: $dark-color;
+					font-family: yekanBakh-reg;
+					border: 1px solid $light-gray;
+
+					&::placeholder {
+						font-family: yekanBakh-reg;
+						color: $light-gray;
+						text-align: right;
+						font-size: 0.9rem;
+						padding: 2px;
+					}
+
+					&:focus-visible {
+						outline: 1px solid $gray-color;
+					}
+				}
+			}
+
+			img {
+				@extend input;
+				left: 13px;
+				height: 24px;
+				width: 24px;
+				margin: 7px;
+				z-index: 999;
+			}
+		}
+	}
+
+	ul {
+		margin: auto 0;
+		justify-content: space-between;
+		font-family: yekanBakh-reg;
+		align-items: center;
+
+		.link {
+			&-items a {
+				display: inline-block;
+				margin: 0 10px;
+				line-height: 2;
+			}
+		}
+	}
 }
