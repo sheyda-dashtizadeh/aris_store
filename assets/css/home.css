@@ -1,0 +1,117 @@
+@font-face {
+  font-family: YekanBakh-reg;
+  src: url(../font/B_Yekan/YekanBakh-Regular.ttf);
+}
+
+@font-face {
+  font-family: YekanBakh-med;
+  src: url(../font/B_Yekan/Yekan-med.ttf);
+}
+
+@font-face {
+  font-family: YekanBakh-bold;
+  src: url(../font/B_Yekan/YekanBakh-Bold.ttf);
+}
+
+@font-face {
+  font-family: neon-reg;
+  src: url(../font/Neonderthaw-Regular.ttf);
+}
+
+section {
+  padding: 10px 0;
+}
+
+section h2 {
+  text-align: center;
+  color: #212121;
+  font-family: yekanBakh-med;
+  font-size: 1.4rem;
+  margin: 24px 0;
+}
+
+.guide .box {
+  width: 300px;
+  padding-left: 11px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.guide .box-container {
+  padding: 40px 0;
+  margin: 10px auto;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 25px 0 rgba(33, 33, 33, 0.08);
+          box-shadow: 0 0 25px 0 rgba(33, 33, 33, 0.08);
+}
+
+.guide .box img {
+  width: 70px;
+  height: 70px;
+  margin: 0 17px;
+  padding: 0;
+}
+
+.guide .box .content {
+  font-family: yekanBakh-reg;
+}
+
+.guide .box .content h4 {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.guide .box .content p {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #9e9e9e;
+}
+
+.guide .box:not(:last-child) {
+  border-left: 1px solid #9e9e9e;
+}
+
+.newest .card {
+  border: none;
+  width: 255px;
+  height: 372px;
+  margin: 19px 0 0;
+  -webkit-box-shadow: 0 0 25px 0 rgba(33, 33, 33, 0.08);
+          box-shadow: 0 0 25px 0 rgba(33, 33, 33, 0.08);
+}
+
+.newest .card-img-top {
+  width: 180px;
+  height: 230px;
+  margin: 0 auto;
+}
+
+.newest .card-body {
+  font-family: yekanBakh-reg;
+}
+
+.newest .card-title a {
+  color: #212121;
+  font-weight: 600;
+}
+
+.newest .card-text span {
+  color: #212121;
+  font-weight: 600;
+}
+
+.newest .card-text li {
+  display: inline-block;
+  background-color: #4bb06a;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-left: 3px;
+}
+
+.swiper-button-next {
+  left: 0 !important;
+  color: #4dd2e8 !important;
+}
+/*# sourceMappingURL=home.css.map */
