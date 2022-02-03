@@ -56,35 +56,6 @@ section {
 }
 
 .newest {
-	.card {
-		width: 255px;
-		height: 372px;
-
-		&-img-top {
-			width: 180px;
-			height: 230px;
-			margin: 0 auto;
-		}
-
-		&-title > a {
-			color: $dark-color;
-			font-size: 1rem;
-		}
-		&-text {
-			span {
-				color: $dark-color;
-				font-weight: 600;
-			}
-			li {
-				display: inline-block;
-				background-color: $green-phone;
-				width: 8px;
-				height: 8px;
-				border-radius: 50%;
-				margin-left: 3px;
-			}
-		}
-	}
 }
 
 .swiper {
@@ -149,6 +120,7 @@ section {
 		}
 	}
 }
+
 .card {
 	border: none !important;
 	margin: 19px 0 0;
@@ -156,6 +128,7 @@ section {
 
 	&-body {
 		font-family: yekanBakh-reg;
+		border-radius: calc(0.25rem - 1px) !important;
 	}
 
 	&-link {
@@ -173,5 +146,141 @@ section {
 
 	&-text {
 		font-size: 0.9rem;
+	}
+
+	&-smartphone {
+		.card {
+			width: 255px;
+			height: 372px;
+
+			&-img-top {
+				width: 180px;
+				height: 230px;
+				margin: 0 auto;
+			}
+
+			&-title > a {
+				color: $dark-color;
+				font-size: 1rem;
+			}
+			&-text {
+				span {
+					color: $dark-color;
+					font-weight: 600;
+				}
+				&.colors span {
+					display: inline-block;
+					background-color: $green-phone;
+					width: 8px;
+					height: 8px;
+					border-radius: 50%;
+					margin-left: 3px;
+				}
+			}
+		}
+	}
+}
+
+.countdown {
+	font-family: yekanBakh-med;
+	direction: ltr;
+
+	> div {
+		display: inline-block;
+		width: 35px;
+		margin: 0 4px;
+
+		> span {
+			display: block;
+			text-align: center;
+		}
+	}
+
+	&-container {
+		/*
+		&:not(:last-child):after {
+			content: " \003A";
+			color: $white-color;
+			font-size: 0.85rem;
+		}
+		*/
+
+		.countdown-value {
+			font-size: 0.85rem;
+			font-weight: 600;
+			font-family: yekanBakh-reg;
+			background: $white-color;
+			padding: 10px;
+			color: $dark-color;
+			border-radius: 5px;
+			box-shadow: 0 0 25px 0 rgba($dark-color, 0.08);
+		}
+	}
+}
+
+.offer {
+	&-timer {
+		position: relative;
+		color: $white-color;
+		height: 336px;
+		background: linear-gradient(
+			0deg,
+			rgba(25, 67, 74, 1) 16%,
+			rgba(77, 210, 232, 1) 84%
+		);
+		img {
+			height: 75%;
+			width: 85%;
+			position: absolute;
+			bottom: 0;
+			right: 7%;
+		}
+		&.card {
+			overflow: hidden;
+
+			.card-body {
+				text-align: center;
+			}
+		}
+	}
+}
+
+.introduction {
+	.card {
+		&-title {
+			font-size: 1.4rem;
+			span {
+				color: $dark-color;
+			}
+			.brand {
+				font-family: mulish-bold;
+				text-transform: uppercase;
+			}
+			.model {
+				font-family: mulish-med;
+				text-transform: capitalize;
+			}
+		}
+	}
+}
+
+.blog {
+	.card-body {
+		transform: translateY(-40px);
+	}
+
+	&-date {
+		background-color: $light-color;
+		border-radius: 50% !important;
+		color: $dark-color;
+		margin-right: 20px;
+		width: 75px;
+		height: 75px;
+		text-align: center;
+		box-shadow: 0 0 25px 0 rgba($dark-color, 0.08);
+
+		.day {
+			border-bottom: 1px solid $light-gray;
+		}
 	}
 }
