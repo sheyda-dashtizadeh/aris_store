@@ -57,23 +57,18 @@ section {
 
 .newest {
 	.card {
-		border: none;
 		width: 255px;
 		height: 372px;
-		margin: 19px 0 0;
-		box-shadow: 0 0 25px 0 rgba($dark-color, 0.08);
 
 		&-img-top {
 			width: 180px;
 			height: 230px;
 			margin: 0 auto;
 		}
-		&-body {
-			font-family: yekanBakh-reg;
-		}
-		&-title a {
+
+		&-title > a {
 			color: $dark-color;
-			font-weight: 600;
+			font-size: 1rem;
 		}
 		&-text {
 			span {
@@ -96,5 +91,87 @@ section {
 	&-button-next {
 		left: 0 !important;
 		color: $blue !important;
+	}
+}
+
+.categories {
+	.row {
+		width: 30%;
+	}
+
+	.category {
+		height: 400px;
+	}
+
+	.card {
+		width: 33%;
+		height: fit-content;
+		padding: 20px 0 !important;
+
+		&-body {
+			flex: 0 !important;
+			text-align: center;
+		}
+
+		&-img-bottom {
+			height: 160px;
+			margin: 0;
+		}
+	}
+}
+
+.banner {
+	.card {
+		width: 47%;
+
+		&-body {
+			color: $white-color;
+		}
+		&-text,
+		&-link {
+			font-size: 0.85rem;
+		}
+	}
+	&-left {
+		.card {
+			&-img-overlay {
+				top: 15% !important;
+				left: 50% !important;
+			}
+		}
+	}
+	&-right {
+		.card {
+			&-img-overlay {
+				top: 15% !important;
+				right: 50% !important;
+			}
+		}
+	}
+}
+.card {
+	border: none !important;
+	margin: 19px 0 0;
+	box-shadow: 0 0 25px 0 rgba($dark-color, 0.08);
+
+	&-body {
+		font-family: yekanBakh-reg;
+	}
+
+	&-link {
+		color: $blue;
+	}
+	&-arrow {
+		margin-right: 7px;
+		width: 10px;
+		height: 18px;
+	}
+	&-title {
+		font-size: 1.2rem;
+		font-family: yekanBakh-med;
+	}
+
+	&-text {
+		font-size: 0.9rem;
 	}
 }
