@@ -13,7 +13,7 @@
 	<body>
 		<nav class="nav">
 			<div class="nav-top">
-				<div class="container d-flex align-items-center">
+				<div class="container d-flex">
 					<ul class="list-unstyled d-flex link">
 						<li class="link-items"><a href="#">درباه ما</a></li>
 						<li class="link-items"><a href="#">تماس با ما</a></li>
@@ -53,6 +53,131 @@
 				</div>
 			</div>
 		</nav>
+		<header class="head">
+			<div class="container">
+				<div class="swiper head-swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="card">
+								<div class="row g-0">
+									<div class="col-md-5">
+										<div class="card-body">
+											<h6 class="card-title">
+												<span class="brand">سامسونگ</span> <span>گلگسی زد فولد 2</span>
+											</h6>
+											<p class="card-text">
+												لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+												استفاده از طراحان گرافیک است.
+											</p>
+											<p class="card-text price-box">
+												<span class="price">49,99,00</span>
+												تومان
+											</p>
+											<a href="#" class="btn view">مشاهده محصول</a>
+										</div>
+									</div>
+									<div class="col-md-7">
+										<img
+											src="../assets/img/header-1.png"
+											class="img-fluid rounded-start"
+											alt="..."
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="card">
+								<div class="row g-0">
+									<div class="col-md-5">
+										<div class="card-body">
+											<h6 class="card-title">
+												<span class="brand">سامسونگ</span> <span>گلگسی زد فولد 2</span>
+											</h6>
+											<p class="card-text">
+												لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+												استفاده از طراحان گرافیک است.
+											</p>
+											<p class="card-text price-box">
+												<span class="price">49,99,00</span>
+												تومان
+											</p>
+											<a href="#" class="btn view">مشاهده محصول</a>
+										</div>
+									</div>
+									<div class="col-md-7">
+										<img
+											src="../assets/img/header-1.png"
+											class="img-fluid rounded-start"
+											alt="..."
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="card">
+								<div class="row g-0">
+									<div class="col-md-5">
+										<div class="card-body">
+											<h6 class="card-title">
+												<span class="brand">سامسونگ</span> <span>گلگسی زد فولد 2</span>
+											</h6>
+											<p class="card-text">
+												لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+												استفاده از طراحان گرافیک است.
+											</p>
+											<p class="card-text price-box">
+												<span class="price">49,99,00</span>
+												تومان
+											</p>
+											<a href="#" class="btn view">مشاهده محصول</a>
+										</div>
+									</div>
+									<div class="col-md-7">
+										<img
+											src="../assets/img/header-1.png"
+											class="img-fluid rounded-start"
+											alt="..."
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="card">
+								<div class="row g-0">
+									<div class="col-md-5">
+										<div class="card-body">
+											<h6 class="card-title">
+												<span class="brand">سامسونگ</span> <span>گلگسی زد فولد 2</span>
+											</h6>
+											<p class="card-text">
+												لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+												استفاده از طراحان گرافیک است.
+											</p>
+											<p class="card-text price-box">
+												<span class="price">49,99,00</span>
+												تومان
+											</p>
+											<a href="#" class="btn view">مشاهده محصول</a>
+										</div>
+									</div>
+									<div class="col-md-7">
+										<img
+											src="../assets/img/header-1.png"
+											class="img-fluid rounded-start"
+											alt="..."
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+		</header>
 		<section class="guide">
 			<div class="container">
 				<h2>از ما <span>خرید</span> کنید و رضایت بیشتری کسب کنید!</h2>
@@ -693,6 +818,23 @@
 				},
 				navigation: {
 					nextEl: ".swiper-button-next",
+				},
+			});
+
+			var swiper = new Swiper(".head-swiper", {
+				//direction: "vertical",
+				// autoplay: {
+				// 	delay: 2000,
+				// 	disableOnInteraction: false,
+				// },
+				pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+
+					renderBullet: function (index, className) {
+						return '<span class="' + className + '">' + (index + 1) + "</span>";
+					},
+					dynamicBullets: true,
 				},
 			});
 		</script>
