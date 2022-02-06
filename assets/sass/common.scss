@@ -30,17 +30,22 @@ section {
 		padding: 10px 0;
 
 		.link {
-			&-items a {
-				width: 87px;
+			&-items {
+				display: inline-block;
+				margin-left: 5px;
 				height: 19px;
-				font-size: 0.7rem;
-				color: $white-color;
+
+				a {
+					font-size: 0.7rem;
+					color: $white-color;
+				}
 			}
 		}
 
 		.phone {
 			text-align: center;
 			margin: auto auto auto 0;
+			width: fit-content;
 			@include icon-before(
 				0.7rem,
 				$white-color,

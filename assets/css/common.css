@@ -58,9 +58,13 @@ section span {
   padding: 10px 0;
 }
 
-.nav-top .link-items a {
-  width: 87px;
+.nav-top .link-items {
+  display: inline-block;
+  margin-left: 5px;
   height: 19px;
+}
+
+.nav-top .link-items a {
   font-size: 0.7rem;
   color: #f5f5f5;
 }
@@ -68,6 +72,9 @@ section span {
 .nav-top .phone {
   text-align: center;
   margin: auto auto auto 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   font-size: 0.7rem;
   color: #f5f5f5;
 }
