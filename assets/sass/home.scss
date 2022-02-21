@@ -3,13 +3,14 @@
 @import "mixins";
 
 section {
-	padding: 10px 0;
+	padding: 1rem 0 1.5rem;
 
 	h2 {
 		text-align: center;
 		color: $dark-color;
 		font-family: yekanBakh-med;
-		font-size: 1.4rem;
+		font-size: 1.1rem;
+		font-weight: 600;
 		margin: 24px 0;
 	}
 }
@@ -44,7 +45,7 @@ section {
 			}
 		}
 
-		width: 300px;
+		min-width: 300px;
 		//margin: 0 20px;
 		padding-left: 11px;
 		align-items: center;
@@ -120,7 +121,7 @@ section {
 
 .card {
 	border: none !important;
-	margin: 19px 0 0;
+	margin: 19px;
 	box-shadow: 0 0 25px 0 rgba($dark-color, 0.08);
 
 	&-body {
@@ -147,18 +148,15 @@ section {
 
 	&-smartphone {
 		.card {
-			width: 255px;
 			height: 372px;
 
 			&-img-top {
-				width: 180px;
-				height: 230px;
 				margin: 0 auto;
 			}
 
 			&-title > a {
 				color: $dark-color;
-				font-size: 1rem;
+				font-size: 1.1rem;
 			}
 			&-text {
 				span {

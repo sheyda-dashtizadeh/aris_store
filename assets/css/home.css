@@ -34,19 +34,20 @@
 }
 
 section {
-  padding: 10px 0;
+  padding: 1rem 0 1.5rem;
 }
 
 section h2 {
   text-align: center;
   color: #212121;
   font-family: yekanBakh-med;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
+  font-weight: 600;
   margin: 24px 0;
 }
 
 .guide .box {
-  width: 300px;
+  min-width: 300px;
   padding-left: 11px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -144,7 +145,7 @@ section h2 {
 
 .card {
   border: none !important;
-  margin: 19px 0 0;
+  margin: 19px;
   -webkit-box-shadow: 0 0 25px 0 rgba(33, 33, 33, 0.08);
           box-shadow: 0 0 25px 0 rgba(33, 33, 33, 0.08);
 }
@@ -174,19 +175,16 @@ section h2 {
 }
 
 .card-smartphone .card {
-  width: 255px;
   height: 372px;
 }
 
 .card-smartphone .card-img-top {
-  width: 180px;
-  height: 230px;
   margin: 0 auto;
 }
 
 .card-smartphone .card-title > a {
   color: #212121;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .card-smartphone .card-text span {

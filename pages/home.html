@@ -13,43 +13,64 @@
 	<body>
 		<nav class="nav">
 			<div class="nav-top">
-				<div class="container d-flex">
-					<ul class="list-unstyled d-flex link">
-						<li class="link-items"><a href="#">درباه ما</a></li>
-						<li class="link-items"><a href="#">تماس با ما</a></li>
-						<li class="link-items"><a href="#">سوالات متداول</a></li>
-					</ul>
-					<p class="d-flex phone">
-						شماره تماس : <a href="tel:+989112491897">09112491897</a>
-					</p>
+				<div class="container">
+					<div class="row">
+						<ul class="col-6 col-md-4 list-unstyled d-flex link">
+							<li class="link-items"><a href="#">درباه ما</a></li>
+							<li class="link-items"><a href="#">تماس با ما</a></li>
+							<li class="link-items"><a href="#">سوالات متداول</a></li>
+						</ul>
+						<p class="col-6 col-md-3 d-flex phone">
+							شماره تماس : <a href="tel:+989112491897">09112491897</a>
+						</p>
+					</div>
 				</div>
 			</div>
-			<div class="nav-main">
-				<div class="container d-flex align-items-center justify-content-between">
-					<div class="logo">Aris</div>
-					<ul class="list-unstyled d-flex link">
-						<li class="link-items"><a href="#">صفحه اصلی</a></li>
-						<li class="link-items"><a href="#">محصولات</a></li>
-						<li class="link-items"><a href="#">لوازم جانبی</a></li>
-					</ul>
-					<div class="search-box">
-						<input type="text" class="search" placeholder="جستجو کنید" />
-						<a href=""
-							><img src="../assets/img/icon/searching.svg" alt="search icon"
-						/></a>
+			<div class="nav-main navbar navbar-light navbar-expand-lg">
+				<div class="container">
+					<div class="col-3 col-md-2 logo">Aris</div>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarTogglerDemo01"
+						aria-controls="navbarTogglerDemo01"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+						<ul class="list-unstyled d-flex link">
+							<li class="link-items">
+								<a href="#">صفحه اصلی</a>
+							</li>
+							<li class="link-items">
+								<a href="#">محصولات</a>
+							</li>
+							<li class="link-items">
+								<a href="#">لوازم جانبی</a>
+							</li>
+						</ul>
+						<div class="search-box m-auto col-4">
+							<input type="text" class="search" placeholder="جستجو کنید" />
+							<a href=""
+								><img src="../assets/img/icon/searching.svg" alt="search icon"
+							/></a>
+						</div>
+						<ul class="list-unstyled d-flex link quick-dash">
+							<li class="link-items">
+								<a href="#"
+									><img src="../assets/img/icon/shopping-cart.svg" alt="" /> سبد خرید</a
+								>
+							</li>
+							<li class="link-items">
+								<a href="#"
+									><span class="singin">ورود</span><span class="signup">ثبت نام</span></a
+								>
+							</li>
+						</ul>
 					</div>
-					<ul class="list-unstyled d-flex link quick-dash">
-						<li class="link-items">
-							<a href="#"
-								><img src="../assets/img/icon/shopping-cart.svg" alt="" /> سبد خرید</a
-							>
-						</li>
-						<li class="link-items">
-							<a href="#"
-								><span class="singin">ورود</span><span class="signup">ثبت نام</span></a
-							>
-						</li>
-					</ul>
 				</div>
 			</div>
 		</nav>
@@ -181,10 +202,8 @@
 		<section class="guide">
 			<div class="container">
 				<h2>از ما <span>خرید</span> کنید و رضایت بیشتری کسب کنید!</h2>
-				<article
-					class="d-flex align-items-center justify-content-center box-container"
-				>
-					<div class="d-flex box support">
+				<div class="row gap-auto m-auto box-container">
+					<div class="col-lg-4 d-flex box support">
 						<img src="../assets/img/icon/support.svg" />
 						<div class="content">
 							<h4>پشتیبانی 24 ساعته</h4>
@@ -194,7 +213,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="d-flex box validity">
+					<div class="col-lg-4 d-flex box validity">
 						<img src="../assets/img/icon/tick-mark.svg" />
 						<div class="content">
 							<h4>معتبر و اصل</h4>
@@ -204,7 +223,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="d-flex box easyshop">
+					<div class="col-lg-4 d-flex box easyshop">
 						<img src="../assets/img/icon/touch.svg" />
 						<div class="content">
 							<h4>خرید با یک کلیک</h4>
@@ -214,7 +233,7 @@
 							</p>
 						</div>
 					</div>
-				</article>
+				</div>
 			</div>
 		</section>
 		<section class="newest">
@@ -363,7 +382,6 @@
 		<section class="categories">
 			<div class="container">
 				<h2>بر اساس <span>دسته بندی</span> خرید کنید!</h2>
-
 				<div class="category d-flex justify-content-between">
 					<div class="card phones">
 						<div class="card-body">
@@ -794,7 +812,6 @@
 		<script>
 			var swiper = new Swiper(".new-swiper", {
 				slidesPerView: 4,
-				spaceBetween: 30,
 				slidesPerGroup: 4,
 				loop: true,
 				loopFillGroupWithBlank: true,
@@ -808,7 +825,6 @@
 			});
 			var swiper = new Swiper(".offer-swiper", {
 				slidesPerView: 3,
-				spaceBetween: 30,
 				slidesPerGroup: 3,
 				loop: true,
 				loopFillGroupWithBlank: true,
@@ -823,10 +839,10 @@
 
 			var swiper = new Swiper(".head-swiper", {
 				//direction: "vertical",
-				// autoplay: {
-				// 	delay: 2000,
-				// 	disableOnInteraction: false,
-				// },
+				autoplay: {
+					delay: 5000,
+					disableOnInteraction: false,
+				},
 				pagination: {
 					el: ".swiper-pagination",
 					clickable: true,

@@ -38,6 +38,7 @@ section {
 				a {
 					font-size: 0.7rem;
 					color: $white-color;
+					width: max-content;
 				}
 			}
 		}
@@ -68,6 +69,7 @@ section {
 			&-items a {
 				font-size: 0.9rem;
 				color: $gray-color;
+				width: max-content;
 
 				span {
 					padding: 0 4px;
@@ -116,6 +118,32 @@ section {
 				margin: 0 10px;
 				line-height: 2;
 			}
+		}
+	}
+}
+
+.navbar {
+	&-collapse {
+		&.show {
+			> * {
+				margin-top: 10px !important;
+			}
+
+			.search-box {
+				margin-right: 0 !important;
+			}
+
+			.link {
+				justify-content: start;
+			}
+		}
+	}
+	&-toggler {
+		color: $blue !important;
+		border-color: rgba($blue, 0.15) !important;
+
+		&:focus {
+			box-shadow: 0 0 0 0.15rem !important;
 		}
 	}
 }
